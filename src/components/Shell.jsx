@@ -163,6 +163,23 @@ export function Shell() {
           <Outlet />
         </div>
       </main>
+
+      {/* Footer */}
+      <footer className="border-t border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900/50">
+        <div className="mx-auto max-w-6xl px-4 py-8">
+          <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div className="flex items-center gap-2 text-gray-500 dark:text-gray-400">
+              <PawPrint className="h-5 w-5 text-amber-500" />
+              <span className="text-sm">Barangay Animal Tracking System</span>
+            </div>
+            <div className="flex items-center gap-6 text-sm text-gray-400 dark:text-gray-500">
+              <span>© 2024 All rights reserved</span>
+              <span className="hidden sm:inline">•</span>
+              <span className="hidden sm:inline">Made with ❤️ for the community</span>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
   )
 }
